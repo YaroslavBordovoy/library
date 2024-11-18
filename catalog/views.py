@@ -34,6 +34,7 @@ class LiterariFormatListView(generic.ListView):
 class BookListView(generic.ListView):
     model = Book
     queryset = Book.objects.select_related("format")
+    paginate_by = 1
 
 
 # def book_detail_view(request: HttpRequest, pk: int) -> HttpResponse:
