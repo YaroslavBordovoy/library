@@ -22,6 +22,7 @@ from catalog.views import index
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("catalog/", include("catalog.urls", namespace="catalog")),
-    path("accounts/", include("accounts.urls", namespace="accounts")),
+    # path("registration/", include("registration.urls", namespace="registration")),
+    path("accounts/", include("django.contrib.auth.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Author list</h1>
+  <h1>Author list<a style="float: right" href="{% url 'catalog:author-create' %}">Create</a></h1>
   {% if author_list %}
     <ul>
       {% for author in author_list %}
