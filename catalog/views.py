@@ -151,5 +151,3 @@ class BookCreateView(LoginRequiredMixin, generic.CreateView):
 class BookUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Book
     form_class = BookForm
-
- # v4
