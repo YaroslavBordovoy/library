@@ -153,6 +153,4 @@ class BookUpdateView(LoginRequiredMixin, generic.UpdateView):
     form_class = BookForm
 
 
-
-
 # string
